@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="form.css">
+    <title>Formulário</title>
+</head>
+<body>
+
+    <main>
+
+        <form class="form" action="#" method="post">
+
+            <h1>Cadastrar</h1>
+
+            <div class="alerta">
+                <p id="msgError"></p>
+                <p id="msgSuccess"></p>
+            </div>
+            
+            
+            <label id="labelNome" for="name"><strong>Nome</strong></label>
+            <input type="text" name="name" id="name" autofocus placeholder="Digite seu nome">
+
+            <label id="labelUsuario" for="usuario"><strong>Usuário</strong></label>
+            <input type="text" name="usuario" id="usuario" placeholder="Digite seu usuário">
+
+            <label id="labelSenha" for="password"><strong>Senha</strong></label>
+            <input type="password" name="usuario" id="password" placeholder="Digite sua senha">
+
+            <label  id="labelConfirmarSenha"for="confirm-password"><strong>Confirmar Senha</strong></label>
+            <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirme sua senha">
+
+            <div class="botao">
+                <button onclick="cadastrar()" type="button">Cadastrar</button>
+            </div>
+            
+
+        </form>
+
+    </main>
+
+    <script src="form.js"></script>
+</body>
+</html>
